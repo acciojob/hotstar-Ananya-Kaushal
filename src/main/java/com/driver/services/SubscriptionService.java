@@ -50,6 +50,7 @@ public class SubscriptionService {
         user.setSubscription(subscription);
 
         return subscription.getTotalAmountPaid();
+
     }
 
     public Integer upgradeSubscription(Integer userId)throws Exception{
