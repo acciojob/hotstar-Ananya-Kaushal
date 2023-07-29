@@ -1,12 +1,17 @@
 package com.driver.services;
 
 import com.driver.EntryDto.WebSeriesEntryDto;
+import com.driver.Exception.ProductionError;
+import com.driver.Transformer.WebSeriesTransformer;
 import com.driver.model.ProductionHouse;
 import com.driver.model.WebSeries;
 import com.driver.repository.ProductionHouseRepository;
 import com.driver.repository.WebSeriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class WebSeriesService {

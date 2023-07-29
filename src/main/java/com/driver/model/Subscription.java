@@ -73,35 +73,15 @@ public class Subscription {
         this.startSubscriptionDate = durationOfSubscription;
     }
 
-    public int getTotalAmountPaid() {
-        return totalAmountPaid;
-    }
-
-    public void setTotalAmountPaid(int totalAmountPaid) {
-        this.totalAmountPaid = totalAmountPaid;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
     public void setUser(User user) {
         this.user = user;
     }
 
-    public int getTotalAmountPaid() {
-        return totalAmountPaid;
-    }
-
-    public void setTotalAmountPaid(int totalAmountPaid) {
+    public void setTotalAmountPaid(int priceOdSubscription) {
         this.totalAmountPaid = totalAmountPaid;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    public Integer getTotalAmountPaid() {
+        return totalAmountPaid;
     }
 }
