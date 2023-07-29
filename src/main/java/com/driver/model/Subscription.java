@@ -77,6 +77,11 @@ public class Subscription {
         this.user = user;
     }
 
+    public User getUser()
+    {
+        return user;
+    }
+
     public void setTotalAmountPaid(int priceOdSubscription) {
         this.totalAmountPaid = totalAmountPaid;
     }
