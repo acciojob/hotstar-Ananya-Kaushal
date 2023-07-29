@@ -28,10 +28,7 @@ public class SubscriptionService {
 
         User user = userRepository.findById(subscriptionEntryDto.getUserId()).get();
 
-        //Subscription subscription = SubscriptionTransformer.convertDtoToEntity(subscriptionEntryDto);
-        Subscription subscription = new Subscription();
-        subscription.setSubscriptionType(subscriptionEntryDto.getSubscriptionType());
-        subscription.setNoOfScreensSubscribed(subscriptionEntryDto.getNoOfScreensRequired());
+        Subscription subscription = SubscriptionTransformer.convertDtoToEntity(subscriptionEntryDto);
         SubscriptionType subscriptionType = subscription.getSubscriptionType();
         int noOfScreen = subscription.getNoOfScreensSubscribed();
 
